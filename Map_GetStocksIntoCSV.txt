@@ -1,0 +1,5 @@
+Get each Stock's HTMl from account
+
+Get each total return # from each HTML
+
+Write #'s into CSV file
