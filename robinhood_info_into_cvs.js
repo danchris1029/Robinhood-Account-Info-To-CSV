@@ -59,6 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
 			  +"var callback = [total_return, names];"
 			  +"callback;"
 			  
-	},
+	}, 
+	function(callback){
+		total_return = callback[0][0];					// For some reason a multi-dimensional array is always returned with call back
+		names = callback[0][1];
+		console.log(total_return);
+		console.log(names);
+	});
   });
 }, false);
