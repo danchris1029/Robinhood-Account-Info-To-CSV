@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
    
     chrome.tabs.executeScript(null, {
 		code: "var stocks_html = []; var total_return = []; var equity_array = []; var price_array = [];"
+	    		  // change names to stocks you want to gather information from
 			  +"var names = [\"ATVI\", \"IQ\", \"NMIH\", \"HPQ\", \"BAC\", \"SNAP\", \"HEXO\", \"F\", \"LB\", \"NGL\", \"GE\", \"INTC\", \"TWTR\", \"DISH\", \"AMD\", \"GILD\"];" // Get names of stocks
 			  +"for(i = 0; i < names.length; i++){"
 			  +"	names[i] = '/stocks/' + names[i];"
